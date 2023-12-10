@@ -19,7 +19,7 @@
             </div>
             <ul>
                 <li><a href="Main.php" class="active">
-                        <button type="button" class="btn btn-warning">Ana Sayfaa</button>
+                        <button type="button" class="btn btn-warning">Ana Sayfa</button>
                     </a></li>
                 <li><a href="Support.php">
                         <button type="button" class="btn btn-warning">Destek</button>
