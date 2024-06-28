@@ -68,7 +68,7 @@
                <img id="footer-logo" class="footer-logo" src="logo.jpg" alt="FooterLogo"></a>
             </div>
                     <p class="text-footer">
-                        Copyright © 2023 Her hakkı saklıdır.
+                        Copyright © 2024 Her hakkı saklıdır.
                         WerBorsa.ltd.sti
                     </p>
             <div id="footer-social" class="footer-social">
