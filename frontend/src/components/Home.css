@@ -1,0 +1,117 @@
+/* Container */
+.container-fluid {
+  padding: 0;
+}
+
+/* Reklam Alanları */
+.advertisement {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  min-height: 400px;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Para Birimleri */
+.currency-box {
+  background-color: #ececec;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Giriş/Kayıt Butonu */
+.register-box {
+  background-color: #ffdddd;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.chart-section {
+  background-color: #e0f7fa;
+  padding: 20px;
+  margin-top: 20px;
+  height: 40vh;
+  border: 1px solid #ddd;
+  text-align: center;
+  min-height: 150px;
+  grid-column: span 2;
+}
+
+/* Modal Arka Plan */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal İçerik */
+.modal-content {
+  background-color: #2a2b38; /* Arka plan rengi değişti */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: auto; /* Genişlik otomatik olarak ayarlanacak */
+  max-width: 450px; /* Maksimum genişlik */
+  max-height: 80vh; /* Maksimum yükseklik */
+  overflow-y: auto; /* Yüksekliği aşarsa kaydırma çubuğu ekle */
+  position: relative;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Modal kapatma butonu */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #ddd; /* Arka plan rengi */
+  border: none;
+  font-size: 24px; /* Simge boyutu */
+  cursor: pointer;
+  color: #333; /* Simge rengi */
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 50%; /* Yuvarlak hale getir */
+  width: 35px; /* Genişlik ve yükseklik eşit */
+  height: 35px;
+  display: flex; /* İçeriği ortalamak için */
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background-color: #d9534f; /* Hover'da arka plan değişimi */
+  color: white; /* Hover'da simge rengi */
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 576px) {
+  .modal-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+}
